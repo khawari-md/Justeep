@@ -1,0 +1,53 @@
+[2018-05-20 20:15:17] local.ERROR: Command "make:notofication" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:notofication\" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at E:\\laravel\\xampp\\htdocs\\pweb\\vendor\\symfony\\console\\Application.php:618)
+[stacktrace]
+#0 E:\\laravel\\xampp\\htdocs\\pweb\\vendor\\symfony\\console\\Application.php(229): Symfony\\Component\\Console\\Application->find('make:notoficati...')
+#1 E:\\laravel\\xampp\\htdocs\\pweb\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 E:\\laravel\\xampp\\htdocs\\pweb\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(88): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 E:\\laravel\\xampp\\htdocs\\pweb\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(121): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 E:\\laravel\\xampp\\htdocs\\pweb\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
