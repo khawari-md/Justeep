@@ -20,11 +20,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a href="#"><img src="img/logo1.png" style="height: 40px; margin-top: 5px;margin-bottom: 5px;"></a>
+          <a href="{{ url('index') }}"><img src="img/logo1.png" style="height: 40px; margin-top: 5px;margin-bottom: 5px;"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
+            <li><a href="{{ url('index') }}">Home</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a>
               <ul class="dropdown-menu">
