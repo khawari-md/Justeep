@@ -15,36 +15,36 @@
   </head>
   <body>
     <nav class="navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a href="home.php"><img src="go/logo1.png" style="height: 40px; margin-top: 5px;margin-bottom: 5px;"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Ibu dan Anak</a></li>
-            <li><a href="#">olaharaga</a></li>
-            <li><a href="#">Rumah Tangga</a></li>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a href="home.php"><img src="go/logo1.png" style="height: 40px; margin-top: 5px;margin-bottom: 5px;"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Ibu dan Anak</a></li>
+                <li><a href="#">olaharaga</a></li>
+                <li><a href="#">Rumah Tangga</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Browse</a></li>
+            <li><a href="#">Profile</a></li>
           </ul>
-        </li>
-        <li><a href="#">Browse</a></li>
-        <li><a href="#">Profile</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div class="parallax"></div>
 
@@ -60,21 +60,21 @@
         <div class="col-sm-4">
           <h3>JAKARTA</h3>
           <p style="font-family: Poppins;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="browse.php"><img src="go/jakarta.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
+          <a href="#"><img src="go/jakarta.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
         </div>
         <div class="col-sm-4"> 
           <h3>MEDAN</h3>
           <p style="font-family: Poppins;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="browse.php"><img src="go/medan.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
+          <a href="#"><img src="go/medan.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
         </div>
         <div class="col-sm-4"> 
           <h3>MALANG</h3>
           <p style="font-family: Poppins;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="browse.php"><img src="go/malang.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
+          <a href="#"><img src="go/malang.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
         </div>
       </div>
       <div class="text-center margin">
-        <a href="browse.php" class="btn btn-info" role="button">Show More</a>
+        <a href="#" class="btn btn-info" role="button">Show More</a>
       </div>
     </div>
     <!-- Optional JavaScript -->
