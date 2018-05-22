@@ -35,7 +35,7 @@
                 <li><a href="#">Rumah Tangga</a></li>
               </ul>
             </li>
-            <li><a href="#">Browse</a></li>
+            <li><a href="{{ url('browse') }}">Browse</a></li>
             <li><a href="#">Profile</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
