@@ -38,6 +38,19 @@
             <li><a href="#">Browse</a></li>
             <li><a href="#">Profile</a></li>
           </ul>
+<<<<<<< HEAD
+        </li>
+        <li><a href="#">Browse</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="{{ url('home') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+=======
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -45,6 +58,7 @@
         </div>
       </div>
     </nav>
+>>>>>>> 0dbc1e5979b31bb066b775f9446df30b102214f7
 
     <div class="parallax"></div>
 
