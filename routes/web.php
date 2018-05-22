@@ -19,4 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-route::get('verify/{token}','VerifyController@verify')->name('verify');
+Route::get('verify/{token}','VerifyController@verify')->name('verify');
+
+Route::get('/browse', function () {
+	return view('browse');
+});
