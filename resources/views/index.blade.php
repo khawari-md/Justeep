@@ -22,7 +22,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a href="home.php"><img src="logo1.png" style="height: 40px; margin-top: 5px;margin-bottom: 5px;"></a>
+      <a href="home.php"><img src="go/logo1.png" style="height: 40px; margin-top: 5px;margin-bottom: 5px;"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -50,7 +50,7 @@
 
     <div class="container-fluid bg-1 text-center">
       <h2 class="margin" style="font-family: Fira Sans;">Apa sih Justeep itu?</h2>
-      <img src="logo1.png" class="img-responsive margin" style="display:inline" alt="Justeep" width="500" height="500">
+      <img src="go/logo1.png" class="img-responsive margin" style="display:inline" alt="Justeep" width="500" height="500">
       <h3 style="font-family: Poppins;">Justeep adalah sebuah wadah untuk berbelanja dengan menitipkan kepada orang-orang yang satu kota dengan kita yang sedang berpergian ke kota dimana barang yang kalian inginkan berada.</h3>
     </div>
 
