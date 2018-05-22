@@ -22,7 +22,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a href="home.php"><img src="img/logo1.png" style="height: 40px; margin-top: 5px;margin-bottom: 5px;"></a>
+          <a href="#"><img src="img/logo1.png" style="height: 40px; margin-top: 5px;margin-bottom: 5px;"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -31,7 +31,7 @@
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Ibu dan Anak</a></li>
-                <li><a href="#">olaharaga</a></li>
+                <li><a href="#">Olaharaga</a></li>
                 <li><a href="#">Rumah Tangga</a></li>
               </ul>
             </li>
