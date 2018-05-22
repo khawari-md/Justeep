@@ -44,7 +44,7 @@
 	</nav>
 	
 	<div class="container">
-		
+		Browse Your Stuff..
 	</div>
 
 	<div class="container">    
