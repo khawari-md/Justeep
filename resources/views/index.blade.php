@@ -22,7 +22,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a href="home.php"><img src="go/logo1.png" style="height: 40px; margin-top: 5px;margin-bottom: 5px;"></a>
+          <a href="home.php"><img src="img/logo1.png" style="height: 40px; margin-top: 5px;margin-bottom: 5px;"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -38,33 +38,19 @@
             <li><a href="#">Browse</a></li>
             <li><a href="#">Profile</a></li>
           </ul>
-<<<<<<< HEAD
-        </li>
-        <li><a href="#">Browse</a></li>
-        <li><a href="#">Profile</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="{{ url('home') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-=======
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="{{ url('home') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul>
         </div>
       </div>
     </nav>
->>>>>>> 0dbc1e5979b31bb066b775f9446df30b102214f7
 
     <div class="parallax"></div>
 
     <div class="container-fluid bg-1 text-center">
       <h2 class="margin" style="font-family: Fira Sans;">Apa sih Justeep itu?</h2>
-      <img src="go/logo1.png" class="img-responsive margin" style="display:inline" alt="Justeep" width="500" height="500">
+      <img src="img/logo1.png" class="img-responsive margin" style="display:inline" alt="Justeep" width="500" height="500">
       <h3 style="font-family: Poppins;">Justeep adalah sebuah wadah untuk berbelanja dengan menitipkan kepada orang-orang yang satu kota dengan kita yang sedang berpergian ke kota dimana barang yang kalian inginkan berada.</h3>
     </div>
 
@@ -74,17 +60,17 @@
         <div class="col-sm-4">
           <h3>JAKARTA</h3>
           <p style="font-family: Poppins;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#"><img src="go/jakarta.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
+          <a href="#"><img src="img/jakarta.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
         </div>
         <div class="col-sm-4"> 
           <h3>MEDAN</h3>
           <p style="font-family: Poppins;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#"><img src="go/medan.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
+          <a href="#"><img src="img/medan.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
         </div>
         <div class="col-sm-4"> 
           <h3>MALANG</h3>
           <p style="font-family: Poppins;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#"><img src="go/malang.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
+          <a href="#"><img src="img/malang.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
         </div>
       </div>
       <div class="text-center margin">
