@@ -60,17 +60,17 @@
         <div class="col-sm-4">
           <h3>JAKARTA</h3>
           <p style="font-family: Poppins;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="browse.php"><img src="jakarta.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
+          <a href="browse.php"><img src="go/jakarta.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
         </div>
         <div class="col-sm-4"> 
           <h3>MEDAN</h3>
           <p style="font-family: Poppins;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="browse.php"><img src="medan.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
+          <a href="browse.php"><img src="go/medan.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
         </div>
         <div class="col-sm-4"> 
           <h3>MALANG</h3>
           <p style="font-family: Poppins;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="browse.php"><img src="malang.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
+          <a href="browse.php"><img src="go/malang.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
         </div>
       </div>
       <div class="text-center margin">
