@@ -34,7 +34,7 @@ html, body{
 }
 
 .parallax{
-	background-image: url(go/bg.png);
+	background-image: url(img/bg.png);
     height: 100%;
     width: 100%;
     background-attachment: fixed;
