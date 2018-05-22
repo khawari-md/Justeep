@@ -10,8 +10,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="home.css">
-
-    <title>Justeep - HOME</title>
   </head>
   <body>
     <nav class="navbar-inverse navbar-fixed-top">
