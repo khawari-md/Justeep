@@ -1,17 +1,21 @@
 @extends('layouts.navbar')
 
 @section('content')	
-	<div class="container">
+	<div class="atas">
 		Browse Your Stuff..
 	</div>
-
+	<br>
 	<div class="container">    
 	  <div class="row">
 	    <div class="col-sm-4">
 	      <div class="panel panel-primary">
-	        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+	        <div class="panel-heading">Makaroni</div>
 	        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-	        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+	        <div class="panel-footer">
+	        	Qty: 10
+	        	<br>Rp 10.000/pcs
+	        	<br>MALANG
+	        </div>
 	      </div>
 	    </div>
 	    <div class="col-sm-4"> 
