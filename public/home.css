@@ -57,6 +57,5 @@ html, body{
 }
 
 a img.img-responsive.margin:hover{
-	background-color: #ecc9c3;
-	opacity: 75%;
+	color: #ecc9c3;
 }
