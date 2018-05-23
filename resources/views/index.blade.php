@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="home.css">
   </head>
   <body>
+<!-- Navbar -->
     <nav class="navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -20,7 +21,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a href="{{ url('index') }}"><img src="img/logo1.png" style="height: 40px; margin-top: 5px;margin-bottom: 5px;"></a>
+          <a href="{{ url('index') }}"><img class="logo" src="img/logo1.png"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -43,9 +44,9 @@
         </div>
       </div>
     </nav>
-
+<!-- Parallax -->
     <div class="parallax"></div>
-
+<!-- Main -->
     <div class="container-fluid bg-1 text-center">
       <h2 class="margin" style="font-family: Fira Sans;">Apa sih Justeep itu?</h2>
       <img src="img/logo1.png" class="img-responsive margin" style="display:inline" alt="Justeep" width="500" height="500">
@@ -75,8 +76,41 @@
         <a href="#" class="btn btn-info" role="button">Show More</a>
       </div>
     </div>
-    <footer class="container-fluid text-center">
-      <p>Khawari MD - Daniel Kurniawan - Almas Aqmarina</p>
+    <!-- FOOTER -->
+    <footer class="footer-bs">
+        <div class="row">
+          <div class="col-md-4 footer-brand animated fadeInLeft">
+              <h2><img class="logo" src="img/logo1.png"></h2>
+                <p>Justeep adalah sebuah wadah untuk berbelanja dengan menitipkan kepada orang-orang yang satu kota dengan kita yang sedang berpergian ke kota dimana barang yang kalian inginkan berada.</p>
+                <p>© 2018, AJPRO - Khaw - Deka - Almas</p>
+            </div>
+          <div class="col-md-5 footer-nav animated fadeInUp">
+              <h4>Menu —</h4>
+              <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Item Offer</a></li>
+                        <li><a href="#">Item Request</a></li>
+                        <li><a href="#">Categories</a></li>
+                    </ul>
+                </div>
+              <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+          <div class="col-md-3 footer-social animated fadeInDown">
+              <h4>Follow Us</h4>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+              </ul>
+          </div>
+        </div>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

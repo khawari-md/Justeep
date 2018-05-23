@@ -43,9 +43,41 @@
     </div>
   </nav>
   @yield('content')
-  <footer class="container-fluid text-center">
-    <p>Khawari MD - Daniel Kurniawan - Almas Aqmarina</p>
-  </footer>
+    <footer class="footer-bs">
+        <div class="row">
+          <div class="col-md-4 footer-brand animated fadeInLeft">
+              <h2><img class="logo" src="img/logo1.png"></h2>
+                <p>Justeep adalah sebuah wadah untuk berbelanja dengan menitipkan kepada orang-orang yang satu kota dengan kita yang sedang berpergian ke kota dimana barang yang kalian inginkan berada.</p>
+                <p>© 2018, AJPRO - Khaw - Deka - Almas</p>
+            </div>
+          <div class="col-md-5 footer-nav animated fadeInUp">
+              <h4>Menu —</h4>
+              <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Item Offer</a></li>
+                        <li><a href="#">Item Request</a></li>
+                        <li><a href="#">Categories</a></li>
+                    </ul>
+                </div>
+              <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+          <div class="col-md-3 footer-social animated fadeInDown">
+              <h4>Follow Us</h4>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+              </ul>
+          </div>
+        </div>
+    </footer>
   <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

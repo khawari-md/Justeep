@@ -25,3 +25,9 @@ Route::get('/index', function(){
 Route::get('/browse', function () {
 	return view('browse');
 });
+Route::get('/itemof', function(){
+	return view('itemof');
+});
+Route::get('/itemreq', function(){
+	return view('itemreq');
+});
