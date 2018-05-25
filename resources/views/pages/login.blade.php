@@ -11,10 +11,10 @@
 			</div>
 			{!! Form::open(array('route' => 'logins.store')) !!}
 			  {{ Form::label('user_nama', 'Username: ') }}
-			  {{ Form::text('user_nama', null, array('class' => 'form-control')) }}
+			  {{ Form::text('user_nama', null, array('class' => 'form-control', 'placeholder' => 'Username')) }}
 
 			  {{ Form::label('password', 'Password: ') }}
-			  {{ Form::password('password', array('class' => 'form-control')) }}
+			  {{ Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password')) }}
 			  {{ Form::submit('Login', array('class' => 'btn btn-success btn-md')) }}
 			{!! Form::close() !!}
 		</div>
@@ -23,22 +23,23 @@
 			<p> Please fill this form to create an account</p>
 			{!! Form::open(array('route' => 'logins.store')) !!}
 			  {{ Form::label('user_nama', 'Username: ') }}
-			  {{ Form::text('user_nama', null, array('class' => 'form-control')) }}
+			  {{ Form::text('user_nama', null, array('class' => 'form-control', 'placeholder' => 'Username')) }}
 
 			  {{ Form::label('email', 'Email: ') }}
-			  {{ Form::text('email', null, array('class' => 'form-control'))}}
+			  {{ Form::text('email', null, array('class' => 'form-control', 'placeholder' => 'Email')) }}
 
-			  {{ Form::label('passwors', 'Password: ')}}
-			  {{ Form::password('password', array('class' => 'form-control'))}}
+			  {{ Form::label('password', 'Password: ')}}
+			  {{ Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password')) }}
 
 			  {{ Form::label('alamat', 'Alamat: ') }}
-			  {{ Form::text('alamat', null, array('class' => 'form-control')) }}
+			  {{ Form::text('alamat', null, array('class' => 'form-control', 'placeholder' => 'Alamat')) }}
 
 			  {{ Form::label('jenis_kel', 'Jenis Kelamin(L/P): ') }}
-			  {{ Form::text('jenis_kel', null, array('class' => 'form-control')) }}
+			  {{ Form::radio('jenis_kel', 'Perempuan', true) }}
+			  {{ Form::radio('jenis_kel', 'Laki-laki') }}
 
-			  {{ Form::label('tgl_lahir', 'Tanggal Lahir: ') }}
-			  {{ Form::text('tgl_lahir', null, array('class' => 'form-control')) }}
+			  {{ Form::label('tgl_lahir', 'Tanggal Lahir: ', array('style' => 'margin-left: 50px')) }}
+			  {{ Form::date('tgl_lahir', null, array('class' => 'form-contol')) }}
 			  {{ Form::submit('Submit', array('class' => 'btn btn-success btn-lg btn-block')) }}
 			{!! Form::close() !!}
 			  </div>
