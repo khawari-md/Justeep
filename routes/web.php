@@ -20,3 +20,4 @@ Route::get('/itemof', 'PagesController@getItemOf');
 Route::get('/itemreq', 'PagesController@getItemReq');
 Route::get('/login', 'PagesController@getLogin');
 Route::get('/index','PagesController@getIndex');
+Route::resource('posts', 'PostController');
