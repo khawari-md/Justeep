@@ -22,4 +22,8 @@ class PagesController extends Controller
     public function getItemReq () {
     	return view('pages.itemreq');
     }
+
+    public function getLogin () {
+    	return view('pages.login');
+    }
 }

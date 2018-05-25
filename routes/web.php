@@ -13,9 +13,10 @@
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 Route::get('verify/{token}','VerifyController@verify')->name('verify');
 Route::get('/', 'PagesController@getIndex');
 Route::get('/browse', 'PagesController@getBrowse');
 Route::get('/itemof', 'PagesController@getItemOf');
 Route::get('/itemreq', 'PagesController@getItemReq');
+Route::get('/login', 'PagesController@getLogin');
+Route::get('/index','PagesController@getIndex');

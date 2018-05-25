@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="browse.css">
 <body>
-  <nav class="navbar-inverse navbar-fixed-top">
+  <nav class="navbar-fixed-top navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -37,7 +37,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-          <li><a href="{{ url('home') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          <li><a href="{{ url('login') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
         </ul>
       </div>
     </div>
