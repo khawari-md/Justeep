@@ -11,15 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('verify/{token}','VerifyController@verify')->name('verify');
-Route::get('/index', 'PagesController@getIndex');
+Route::get('/', 'PagesController@getIndex');
 Route::get('/browse', 'PagesController@getBrowse');
 Route::get('/itemof', 'PagesController@getItemOf');
 Route::get('/itemreq', 'PagesController@getItemReq');
