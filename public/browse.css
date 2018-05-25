@@ -2,11 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:500i');
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-html, body{
-	width: 100%;
-	height: 100%;
-}
-
 .atas{
 	text-align: center;
     font-family: 'Fira Sans';
