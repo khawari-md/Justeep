@@ -9,26 +9,19 @@
 			<div class="imgcontainer">
 				<img src="img/avatar.png" alt="Avatar" class="avatar">
 			</div>
-			{!! Form::open(array('route' => 'posts.store')) !!}
+			{!! Form::open(array('route' => 'logins.store')) !!}
 			  {{ Form::label('user_nama', 'Username: ') }}
 			  {{ Form::text('user_nama', null, array('class' => 'form-control')) }}
 
 			  {{ Form::label('password', 'Password: ') }}
-			  {{ Form::password('password', array('class' => 'form-control'))}}
+			  {{ Form::password('password', array('class' => 'form-control')) }}
+			  {{ Form::submit('Login', array('class' => 'btn btn-success btn-md')) }}
 			{!! Form::close() !!}
-				  <button type="submit">Login</button>
-				  <label>
-				    <input type="checkbox" checked="checked" name="remember"> Remember Me
-				  </label>
-				  <span class="psw">Forgot <a href="#">password?</a></span>
-			<div class="container-fluid" style="background-color:#f1f1f1">
-			    <button type="button" class="cancelbtn">Cancel</button>
-			</div>
 		</div>
 		<div class="col-md-5">
 			<h1 class="atas">Sign Up:</h1>
 			<p> Please fill this form to create an account</p>
-			{!! Form::open(array('route' => 'posts.store')) !!}
+			{!! Form::open(array('route' => 'logins.store')) !!}
 			  {{ Form::label('user_nama', 'Username: ') }}
 			  {{ Form::text('user_nama', null, array('class' => 'form-control')) }}
 
@@ -46,14 +39,8 @@
 
 			  {{ Form::label('tgl_lahir', 'Tanggal Lahir: ') }}
 			  {{ Form::text('tgl_lahir', null, array('class' => 'form-control')) }}
+			  {{ Form::submit('Submit', array('class' => 'btn btn-success btn-lg btn-block')) }}
 			{!! Form::close() !!}
-			    <label>
-			      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-			    </label>
-			    <div class="clearfix">
-			      <button type="button" class="cancelbtn">Cancel</button>
-			      <button type="submit" class="signupbtn">Sign Up</button>
-			    </div>
 			  </div>
 			  </div>
 		</div>
