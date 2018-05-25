@@ -11,6 +11,7 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="browse.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
 <body>
   <nav class="navbar-fixed-top navbar-inverse">
     <div class="container-fluid">
