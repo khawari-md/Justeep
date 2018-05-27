@@ -26,4 +26,12 @@ class PagesController extends Controller
     public function getLogin () {
     	return view('pages.login');
     }
+
+    public function getProfile () {
+    	return view('pages.profile');
+    }
+
+   	public function getSubmit () {
+   		return view('pages.submit');
+   	}
 }

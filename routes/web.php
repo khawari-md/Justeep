@@ -20,5 +20,7 @@ Route::get('/itemof', 'PagesController@getItemOf');
 Route::get('/itemreq', 'PagesController@getItemReq');
 Route::get('/login', 'PagesController@getLogin');
 Route::get('/index','PagesController@getIndex');
+Route::get('/profile','PagesController@getProfile');
+Route::get('/submit','PagesController@getSubmit');
 
 Route::resource('logins', 'LoginController');
