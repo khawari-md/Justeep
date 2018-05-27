@@ -7,20 +7,19 @@
 	<br>
 	<div class="container">
 			<div class="row">
-<<<<<<< HEAD
-				<div class="col-md-6">
+{{-- 				<div class="col-md-6">
 				<a href="#"><button type="button" class="btn btn-default">Item Offer</button></a>
 				</div>
 				<div class="col-md-6">
-				<a href="#"><button type="button" class="btn btn-default">Item Request</button></a>
-=======
+				<a href="#"><button type="button" class="btn btn-default">Item Request</button></a> --}}
+
 				<div class="col-md-2"></div>
 				<div class="col-md-4">
-				<a href="#"><button type="button" class="btn btn-success">Item Offer</button></a>
+				<a href="{{ url('itemof') }}"><button type="button" class="btn btn-success">Item Offer</button></a>
 				</div>
 				<div class="col-md-4">
-				<a href="#"><button type="button" class="btn btn-warning">Item Request</button></a>
->>>>>>> f7bf5548026934eac61ad6007d56488318ad4af1
+				<a href="{{ url('itemreq') }}"><button type="button" class="btn btn-warning">Item Request</button></a>
+
 				</div>
 				<div class="col-md-2"></div>
 			</div>
