@@ -26,5 +26,6 @@ class FormController extends Controller
     	$data->save();
 
     	return redirect()->action('PagesController@getSubmit');
+    	
     }
 }

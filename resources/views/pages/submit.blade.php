@@ -9,7 +9,7 @@
 
 	{{ Form::label('onr_foto', 'Upload Foto Barang: ') }}
 	{{ Form::file('onr_foto') }}
-
+	<br>
 	{{ Form::label('kategori', 'Kategori: ') }}
 	<br>
 	<div class="radio-inline">
