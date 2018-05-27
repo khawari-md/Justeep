@@ -8,10 +8,10 @@
 	<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-				<a href="#"><button type="button" class="btn btn-outline-info d-block mx-auto my-3">Item Offer</button></a>
+				<a href="#"><button type="button" class="btn btn-default">Item Offer</button></a>
 				</div>
 				<div class="col-md-6">
-				<a href="#"><button type="button" class="btn btn-outline-primary">Item Request</button></a>
+				<a href="#"><button type="button" class="btn btn-default">Item Request</button></a>
 				</div>
 			</div>
 	</div>
