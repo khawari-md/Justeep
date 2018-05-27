@@ -25,6 +25,7 @@ class CreateOnrsTable extends Migration
             $table->string('kota_barang');
             $table->string('kota_onr');
             $table->string('onr');
+            $table->binary('onr_foto');
         });
     }
 

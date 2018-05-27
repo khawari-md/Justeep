@@ -1,11 +1,14 @@
 @extends('layouts.navbar')
 
 @section('content')
-  {!! Form::open(array('route' => 'forms.store','class' => 'form-submit')) !!}
+  {!! Form::open(array('route' => 'forms.store','class' => 'form-submit', 'files' => true)) !!}
 	<h1 class="active">Submit here : </h1>
 	<p> Please fill this form to create an account</p><hr>
 	{{ Form::label('nama_barang', 'Nama Barang: ') }}
 	{{ Form::text('nama_barang', null, array('class' => 'form-control', 'placeholder' => 'Nama Barang...')) }}
+
+	{{ Form::label('onr_foto', 'Upload Foto Barang: ') }}
+	{{ Form::file('onr_foto') }}
 
 	{{ Form::label('kategori', 'Kategori: ') }}
 	<br>
