@@ -21,7 +21,7 @@ class FormController extends Controller
     	$data->kota_barang = $request->kota_barang;
     	$data->kota_onr = $request->kota_onr;
     	$data->onr = $request->onr;
-
+    	$data->pelaku_id = '2'; //belom ada session
     	$data->save();
     }
 }

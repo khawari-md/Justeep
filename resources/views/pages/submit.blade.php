@@ -11,25 +11,25 @@
 	<br>
 	<div class="radio-inline">
 		<label>
-				<input type="radio" name="kategori" id="optionsRadios1" value="option1" checked>
+				<input type="radio" name="kategori" id="optionsRadios1" value="Makanan" checked>
 				Makanan
 		</label>
 	</div>
 	<div class="radio-inline">
 		<label>
-				<input type="radio" name="kategori" id="optionsRadios2" value="option2">
+				<input type="radio" name="kategori" id="optionsRadios2" value="TAksesoris">
 				Tas dan Aksesoris
 		</label>
 	</div>
 	<div class="radio-inline">
 		<label>
-				<input type="radio" name="kategori" id="optionsRadios3" value="option3">
+				<input type="radio" name="kategori" id="optionsRadios3" value="IbuAnak">
 				Ibu dan Anak
 		</label>
 	</div>
 	<div class="radio-inline">
 		<label>
-				<input type="radio" name="kategori" id="optionsRadios4" value="option4">
+				<input type="radio" name="kategori" id="optionsRadios4" value="Games">
 				Games
 		</label>
 	</div>
@@ -56,13 +56,13 @@
 	<br>
 	<div class="radio-inline">
 		<label>
-				<input type="radio" name="onr" id="optionsRadios1" value="option1" checked>
+				<input type="radio" name="onr" id="optionsRadios1" value="OFFER" checked>
 				OFFER
 		</label>
 	</div>
 	<div class="radio-inline">
 		<label>
-				<input type="radio" name="onr" id="optionsRadios2" value="option2">
+				<input type="radio" name="onr" id="optionsRadios2" value="REQUEST">
 				REQUEST
 		</label>
 	</div>

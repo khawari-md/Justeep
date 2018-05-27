@@ -16,7 +16,7 @@ class CreateOnrsTable extends Migration
         Schema::create('onrs', function (Blueprint $table) {
             $table->increments('onr_id');
             $table->integer('pelaku_id');
-            $table->integer('kategori');
+            $table->string('kategori');
             $table->string('nama_barang');
             $table->text('deskripsi',200);
             $table->integer('harga');
