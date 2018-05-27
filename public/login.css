@@ -11,8 +11,15 @@ form {
     background-size: cover;
 }
 
+.form-submit{
+  margin-top: 30px;
+  width: 600px;
+  height: auto;
+}
+
 .active {
   border-bottom: 2px solid yellow;
+  font-weight: bold;
 }
 
 h1 {
@@ -29,7 +36,7 @@ h1:first-child {
   padding-left: 0px;
 }
 
-.text {
+.text{
   border: none;
   width: 89%;
   padding: 10px 20px;

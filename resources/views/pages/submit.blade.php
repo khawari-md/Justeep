@@ -1,8 +1,8 @@
 @extends('layouts.navbar')
 
 @section('content')
-  {!! Form::open(array('route' => 'logins.store')) !!}
-	<h1 class="active">Submit here:</h1>
+  {!! Form::open(array('route' => 'logins.store','class' => 'form-submit')) !!}
+	<h1 class="active">Submit here : </h1>
 	<p> Please fill this form to create an account</p><hr>
 	{{ Form::label('nama_barang', 'Nama Barang: ') }}
 	{{ Form::text('nama_barang', null, array('class' => 'form-control', 'placeholder' => 'Nama Barang...')) }}
@@ -35,7 +35,7 @@
 	</div>
 	<br>
 	{{ Form::label('deskripsi', 'Deskripsi Barang: ') }}
-	{{ Form::text('deskripsi', null, array('class' => 'form-control', 'placeholder' => 'Deskripsi...')) }}
+	{{ Form::textarea('deskripsi', null, array('class' => 'form-control', 'placeholder' => 'Deskripsi...')) }}
 
 	{{ Form::label('harga', 'Harga: ')}}
 	{{ Form::text('harga', null, array('class' => 'form-control', 'placeholder' => 'Rp xxx.xxx')) }}
