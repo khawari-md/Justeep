@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="browse.css">
     <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="profil.css">
 <body>
     <nav class="navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
