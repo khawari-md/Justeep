@@ -23,4 +23,8 @@ Route::get('/index','PagesController@getIndex');
 Route::get('/profile','PagesController@getProfile');
 Route::get('/submit','PagesController@getSubmit');
 
-Route::resource('logins', 'LoginController');
+Route::post('submit','FormController@submit');
+Route::resources([
+	'forms' => 'FormController',
+	'logins' => 'LoginController'
+]);
