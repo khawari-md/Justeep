@@ -13,36 +13,37 @@
     <link rel="stylesheet" type="text/css" href="browse.css">
     <link rel="stylesheet" type="text/css" href="login.css">
 <body>
-  <nav class="navbar-fixed-top navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a href="{{ url('index') }}"><img src="img/logo1.png" style="height: 40px; margin-top: 5px;margin-bottom: 5px;"></a>
+    <nav class="navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a href="{{ url('index') }}"><img class="logo" src="img/logo1.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="{{ url('index') }}">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Ibu dan Anak</a></li>
+                <li><a href="#">Olahraga</a></li>
+                <li><a href="#">Rumah Tangga</a></li>
+              </ul>
+            </li>
+            <li><a href="{{ url('browse') }}">Browse</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li> -->
+            <li><a href="/login"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="{{ url('index') }}">Home</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Ibu dan Anak</a></li>
-              <li><a href="#">Olaharaga</a></li>
-              <li><a href="#">Rumah Tangga</a></li>
-            </ul>
-          </li>
-          <li><a href="{{ url('browse') }}">Browse</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-          <li><a href="{{ url('login') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
   @yield('content')
     <footer class="footer-bs">
         <div class="row">
