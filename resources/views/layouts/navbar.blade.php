@@ -35,10 +35,10 @@
               </ul>
             </li>
             <li><a href="{{ url('browse') }}">Browse</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="{{ url('profile') }}">Profile</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li> -->
+            <li><a href="#"><span class="glyphicon glyphicon-send"></span> Submit</a></li>
             <li><a href="/login"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
           </ul>
         </div>
