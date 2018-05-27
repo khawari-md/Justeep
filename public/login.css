@@ -1,13 +1,86 @@
 /*LOGIN CSS*/
-form {border: 1px solid #f1f1f1;}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+form {
+    font-family: 'Montserrat';
+    position: relative;
+    width: 405px;
+    margin: auto;
+    padding: 60px 60px;
+    background:no-repeat   center center #f1f1f1;
+    background-size: cover;
+    box-shadow: 0px 30px 60px 0px;#000;
+}
+
+.active {
+  border-bottom: 2px solid #1161ed;
+}
+
+h1 {
+  padding-left: 12px;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 100;
+}
+
+h1:first-child {
+  padding-left: 0px;
+}
+
+.text {
+  border: none;
+  width: 89%;
+  padding: 10px 20px;
+  display: block;
+  height: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0);
+  overflow: hidden;
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.text:focus {
+  outline: 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0);
+}
 
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
     box-sizing: border-box;
+}
+
+.tombol {
+  background-color: #1161ed;
+  color: #FFF;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
+
+.tombol:hover {
+  background: #4082f5;
+  box-shadow: 0px 4px 35px -5px #4082f5;
+  cursor: pointer;
+}
+
+.tombol:focus {
+  outline: none;
 }
 
 .imgcontainer {
@@ -20,13 +93,6 @@ img.avatar {
     border-radius: 50%;
 }
 
-.container {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-}
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
