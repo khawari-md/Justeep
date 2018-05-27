@@ -1,4 +1,4 @@
-@extends('layouts.navbar')
+@extends('layouts.navbar2')
 
 @section('content')
 	<br>
@@ -56,3 +56,4 @@
 			{!! Form::close() !!}
 			  </div> -->
 	</div>
+@endsection
