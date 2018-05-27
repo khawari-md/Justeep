@@ -3,16 +3,16 @@
 form {
     font-family: 'Montserrat';
     position: relative;
-    width: 405px;
+    height: 700px;
+    width: 450px;
     margin: auto;
-    padding: 60px 60px;
-    background:no-repeat   center center #f1f1f1;
+    padding: 30px;
+    background:#f1f1f1;
     background-size: cover;
-    box-shadow: 0px 30px 60px 0px;#000;
 }
 
 .active {
-  border-bottom: 2px solid #1161ed;
+  border-bottom: 2px solid yellow;
 }
 
 h1 {
@@ -45,22 +45,26 @@ h1:first-child {
 
 .text:focus {
   outline: 0;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid #424a4c;
   border-radius: 20px;
-  background: rgba(0, 0, 0, 0);
 }
 
 input[type=text], input[type=password] {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 15px;
+    margin: 5px 0 22px 0;
     display: inline-block;
-    border: 1px solid #fff;
-    box-sizing: border-box;
+    border: none;
+    background: #c1cfab;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
 }
 
 .tombol {
-  background-color: #1161ed;
+  background-color: orange;
   color: #FFF;
   width: 100%;
   padding: 10px 20px;
@@ -74,8 +78,7 @@ input[type=text], input[type=password] {
 }
 
 .tombol:hover {
-  background: #4082f5;
-  box-shadow: 0px 4px 35px -5px #4082f5;
+  background: green;
   cursor: pointer;
 }
 
@@ -89,7 +92,7 @@ input[type=text], input[type=password] {
 }
 
 img.avatar {
-    width: 40%;
+    width: 50%;
     border-radius: 50%;
 }
 
@@ -99,75 +102,5 @@ img.avatar {
     span.psw {
        display: block;
        float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-}
-
-/*SIGNUP CSS*/
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-}
-
-/* Set a style for all buttons */
-button {
-    /*background-color: #4CAF50;*/
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-button:hover {
-    opacity:1;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-    padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
     }
 }
