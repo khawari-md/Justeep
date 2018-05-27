@@ -7,12 +7,14 @@
 	<br>
 	<div class="container">
 			<div class="row">
-				<div class="col-md-6">
-				<a href="#"><button type="button" class="btn btn-outline-info d-block mx-auto my-3">Item Offer</button></a>
+				<div class="col-md-2"></div>
+				<div class="col-md-4">
+				<a href="#"><button type="button" class="btn btn-success">Item Offer</button></a>
 				</div>
-				<div class="col-md-6">
-				<a href="#"><button type="button" class="btn btn-outline-primary">Item Request</button></a>
+				<div class="col-md-4">
+				<a href="#"><button type="button" class="btn btn-warning">Item Request</button></a>
 				</div>
+				<div class="col-md-2"></div>
 			</div>
 	</div>
 	<br>
