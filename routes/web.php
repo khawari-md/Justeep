@@ -19,6 +19,7 @@ Route::get('/browse', 'FormController@show');
 Route::get('/itemof', 'FormController@showof');
 Route::get('/itemreq', 'FormController@showreq');
 
+Route::get('/updateProfile', 'PagesController@getUpdateProf');
 Route::get('/login', 'PagesController@getLogin');
 Route::get('/index','PagesController@getIndex');
 Route::get('/profile','PagesController@getProfile');
@@ -28,5 +29,6 @@ Route::post('submit','FormController@submit');
 
 Route::resources([
 	'forms' => 'FormController',
-	'logins' => 'LoginController'
+	'logins' => 'LoginController',
+	'profiles' => 'ProfileController'
 ]);

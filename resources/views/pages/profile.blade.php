@@ -14,7 +14,7 @@
 						<img src="img/avatar.png" class="avatar" style="width: 30%;">
 					</div>
 					<div class="text-center">
-						<a href="#"><button class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Update Profile</button></a>
+						<a href="{{ url('updateProfile') }}"><button class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Update Profile</button></a>
 					</div>
 				</div>
 				<br>

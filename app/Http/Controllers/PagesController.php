@@ -34,4 +34,8 @@ class PagesController extends Controller
    	public function getSubmit () {
    		return view('pages.submit');
    	}
+
+    public function getUpdateProf() {
+        return view('pages.updateprof');
+    }
 }
