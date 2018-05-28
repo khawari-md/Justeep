@@ -28,10 +28,21 @@ class FormController extends Controller
     	return redirect()->action('PagesController@getSubmit');
     }
 
-    public function show($id)
+    public function show()
     {
-    	$data = onr::all()->where('id',$id);
-
+    	$data = onr::all();
     	return view('pages.browse',['data' => $data]);
+    }
+
+    public function showof()
+    {
+    	$data = onr::all();
+    	return view('pages.itemof',['data' => $data]);
+    }
+    
+    public function showreq()
+    {
+    	$data = onr::all();
+    	return view('pages.itemreq',['data' => $data]);
     }
 }
