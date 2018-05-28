@@ -26,6 +26,12 @@ class FormController extends Controller
     	$data->save();
 
     	return redirect()->action('PagesController@getSubmit');
-    	
+    }
+
+    public function show($id)
+    {
+    	$data = onr::all()->where('id',$id);
+
+    	return view('pages.browse',['data' => $data]);
     }
 }

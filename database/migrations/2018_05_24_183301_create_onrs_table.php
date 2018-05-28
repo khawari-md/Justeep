@@ -25,7 +25,7 @@ class CreateOnrsTable extends Migration
             $table->string('kota_barang');
             $table->string('kota_onr');
             $table->string('onr');
-            $table->binary('onr_foto');
+            $table->binary('onr_foto')->nullable();
 
             $table->foreign('pelaku_id')->references('user_id')->on('users');
             $table->foreign('kategori')->references('kategori_id')->on('kategoris');
