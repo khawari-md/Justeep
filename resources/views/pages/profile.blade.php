@@ -3,7 +3,7 @@
 @section('content')
 	<div class="atas"></div>
 	<div class="container" style="width: 70%;">
-		<div class="panel panel-warning">
+		<div class="panel panel-primary">
 			<div class="panel-heading" style="text-align: center;">
 				<h1 class="active">My Profile</h1>
 			</div>
@@ -70,7 +70,7 @@
 					<div class="col-md-6 text-center">
 						<p>ambil dari database</p>
 					</div>
-					
+
 					<div class="col-md-6 text-center">
 						<p><strong>Tanggal Lahir</strong></p>
 					</div>
