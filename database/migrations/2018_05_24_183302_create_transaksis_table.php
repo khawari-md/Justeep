@@ -16,15 +16,15 @@ class CreateTransaksisTable extends Migration
         Schema::create('transaksis', function (Blueprint $table) {
             $table->increments('transaksi_id');
             $table->integer('onr_id');
-            $table->integer('pelaku_id');
             $table->integer('user_id');
             $table->integer('total_harga');
             $table->integer('rate');
+
+            $table->foreign('onr_id')->references('onr_id')->on('onrs');
+            $table->foreign('user_id')->references('user_id')->on('users');
         });
 
-        $table->foreign('onr_id')->references('onr_id')->on('onrs');
-        $table->foreign('pelaku_id')->references('pelaku_id')->on('onrs');
-        $table->foreign('user_id')->references('user_id')->on('users');
+
     }
 
     /**
