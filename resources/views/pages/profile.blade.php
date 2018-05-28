@@ -21,7 +21,7 @@
 						<p>Rate :</p>
 					</div>
 					<div class="text-center">
-						<a href="#"><button class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Update Profile</button></a>
+						<a href="{{ url('updateProfile') }}"><button class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Update Profile</button></a>
 					</div>
 				</div>
 				<br>
