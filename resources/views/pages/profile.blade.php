@@ -2,8 +2,8 @@
 
 @section('content')
 	<div class="atas"></div>
-	<div class="container" style="width: 750px;">
-		<div class="panel panel-warning">
+	<div class="container" style="width: 70%;">
+		<div class="panel panel-primary">
 			<div class="panel-heading" style="text-align: center;">
 				<h1 class="active">My Profile</h1>
 			</div>
@@ -35,21 +35,48 @@
 					</div>
 				</div>
 				<hr>
-				<div class="col-md-6 text-center">
-					<p><strong>Nama</strong></p>
-					<p><strong>Username</strong></p>
-					<p><strong>Email</strong></p>
-					<p><strong>Alamat</strong></p>
-					<p><strong>Jenis Kelamin</strong></p>
-					<p><strong>Tanggal Lahir</strong></p>
-				</div>
-				<div class="col-md-6 text-center">
-					<p>ambil dari database</p>
-					<p>ambil dari database</p>
-					<p>ambil dari database</p>
-					<p>ambil dari database</p>
-					<p>ambil dari database</p>
-					<p>ambil dari database</p>
+				<div class="row">
+					<div class="col-md-6 text-center">
+						<p><strong>Nama</strong></p>
+					</div>
+					<div class="col-md-6 text-center">
+						<p>ambil dari database</p>
+					</div>
+
+					<div class="col-md-6 text-center">
+						<p><strong>Username</strong></p>
+					</div>
+					<div class="col-md-6 text-center">
+						<p>ambil dari database</p>
+					</div>
+
+					<div class="col-md-6 text-center">
+						<p><strong>Email</strong></p>
+					</div>
+					<div class="col-md-6 text-center">
+						<p>ambil dari database</p>
+					</div>
+
+					<div class="col-md-6 text-center">
+						<p><strong>Alamat</strong></p>
+					</div>
+					<div class="col-md-6 text-center">
+						<p>ambil dari database</p>
+					</div>
+
+					<div class="col-md-6 text-center">
+						<p><strong>Jenis Kelamin</strong></p>
+					</div>
+					<div class="col-md-6 text-center">
+						<p>ambil dari database</p>
+					</div>
+
+					<div class="col-md-6 text-center">
+						<p><strong>Tanggal Lahir</strong></p>
+					</div>
+					<div class="col-md-6 text-center">
+						<p>ambil dari database</p>
+					</div>
 				</div>
 			</div>
 		</div>
