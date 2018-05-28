@@ -15,15 +15,17 @@ Auth::routes();
 
 Route::get('verify/{token}','VerifyController@verify')->name('verify');
 Route::get('/', 'PagesController@getIndex');
-Route::get('/browse', 'PagesController@getBrowse');
-Route::get('/itemof', 'PagesController@getItemOf');
-Route::get('/itemreq', 'PagesController@getItemReq');
+Route::get('/browse', 'FormController@show');
+Route::get('/itemof', 'FormController@showof');
+Route::get('/itemreq', 'FormController@showreq');
+
 Route::get('/login', 'PagesController@getLogin');
 Route::get('/index','PagesController@getIndex');
 Route::get('/profile','PagesController@getProfile');
 Route::get('/submit','PagesController@getSubmit');
 
 Route::post('submit','FormController@submit');
+
 Route::resources([
 	'forms' => 'FormController',
 	'logins' => 'LoginController'

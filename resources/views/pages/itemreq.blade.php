@@ -5,19 +5,54 @@
 		Browse Your Stuff..
 	</div>
 	<br>
+	@foreach($data as $data)
 	<div class="container">
 	  <div class="row">
+	  	@if($data->onr == 'REQUEST')
 	    <div class="col-sm-4">
-	      <div class="panel panel-primary">
-	        <div class="panel-heading"></div> 
+	      <div class="panel panel-warning">
+	        <div class="panel-heading">{{$data->nama_barang}}</div> 
 	        <div class="panel-body"><img src="inidiambilfetch2an" class="img-responsive" style="height:150px; width:100%;" alt="Image"></div>
 	        <div class="panel-footer">
-	        	<br>
-	        	<br>
-	        	<br>
+	        	<table class="table table-borderless mt-2">
+                  <tr>
+                    <th>Kategori:</th>
+                    <td>{{$data->kategori}}</td>
+                  </tr>
+                  <tr>
+                    <th>Deskripsi:</th>
+                    <td>{{$data->deskripsi}}</td>
+                  </tr>
+                  <tr>
+                    <th>Harga:</th>
+                    <td>{{$data->harga}}</td>
+                  </tr>
+                  <tr>
+                    <th>Jumlah:</th>
+                    <td>{{$data->jumlah}}</td>
+                  </tr>
+                  <tr>
+                    <th>Waktu:</th>
+                    <td>{{$data->waktu}}</td>
+                  </tr>
+                  <tr>
+                    <th>Kota Barang:</th>
+                    <td>{{$data->kota_barang}}</td>
+                  </tr>
+                  <tr>
+                    <th>Kota Tujuan:</th>
+                    <td>{{$data->kota_onr}}</td>
+                  </tr>
+                  <tr>
+                    <th>Jenis layanan:</th>
+                    <td>{{$data->onr}}</td>
+                  </tr>
+                </table>        
 	        </div>
 	      </div>
 	    </div>
+	    @endif
+	    @endforeach
 	  </div>
 	</div>
 @endsection
