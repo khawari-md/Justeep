@@ -21,6 +21,10 @@ class CreateTransaksisTable extends Migration
             $table->integer('total_harga');
             $table->integer('rate');
         });
+
+        $table->foreign('onr_id')->references('onr_id')->on('onrs');
+        $table->foreign('pelaku_id')->references('pelaku_id')->on('onrs');
+        $table->foreign('user_id')->references('user_id')->on('users');
     }
 
     /**
