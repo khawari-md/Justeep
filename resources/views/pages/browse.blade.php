@@ -8,10 +8,10 @@
 	<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-				<a href="#"><button type="button" class="btn btn-success btn-block">Item Offer</button></a>
+				<a href="{{ url('itemof') }}"><button type="button" class="btn btn-success btn-block">Item Offer</button></a>
 				</div>
 				<div class="col-md-6">
-				<a href="#"><button type="button" class="btn btn-warning btn-block">Item Request</button></a>
+				<a href="{{ url('itemreq') }}"><button type="button" class="btn btn-warning btn-block">Item Request</button></a>
 				</div>
 			</div>
 	</div>
