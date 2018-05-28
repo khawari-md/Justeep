@@ -9,9 +9,16 @@
 			</div>
 			<div class="panel-body">
 				<div class="row">
-					<div class="imgcontainer">
-						<!-- ini fotonya nggak bisa diupdate -->
-						<img src="img/avatar.png" class="avatar" style="width: 30%;">
+					<div class="col-xs-3">
+						<div class="img_prof">
+							<!-- ini fotonya nggak bisa diupdate -->
+							<img src="img/avatar.png" class="avatar" style="width: 20%;">
+						</div>
+					</div>
+					<div class="col-xs-7">
+						<h2>ini nama ambil dari database</h2>
+						<p>About Me<br>ambil dari database</p>
+						<p>Rate :</p>
 					</div>
 					<div class="text-center">
 						<a href="{{ url('updateProfile') }}"><button class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Update Profile</button></a>
@@ -20,14 +27,14 @@
 				<br>
 				<div class="container-fluid">
 					<div class="col-md-6 text-center">
-						<div style="font-size:3em; color: sky blue">
+						<div style="font-size:3em; color: dark grey">
 							<i class="fas fa-gift"></i>
 						</div>
 						<p>REQUEST</p>
 						<p><strong>ambil dari database yaaaaa</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
-						<div style="font-size:3em; color: sky blue">
+						<div style="font-size:3em; color: dark grey">
 							<i class="fas fa-paper-plane"></i>
 						</div>
 						<p>OFFER</p>
@@ -44,14 +51,14 @@
 					</div>
 
 					<div class="col-md-6 text-center">
-						<p><strong>Username</strong></p>
+						<p><strong>Email</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
-						<p>ambil dari database</p>
+						<p>{{ $user->email }}</p>
 					</div>
 
 					<div class="col-md-6 text-center">
-						<p><strong>Email</strong></p>
+						<p><strong>Telephone Number</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
 						<p>ambil dari database</p>
@@ -61,21 +68,21 @@
 						<p><strong>Alamat</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
-						<p>ambil dari database</p>
+						<p>{{ $user->alamat }}</p>
 					</div>
 
 					<div class="col-md-6 text-center">
 						<p><strong>Jenis Kelamin</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
-						<p>ambil dari database</p>
+						<p>{{ $user->jenis_kel }}</p>
 					</div>
 
 					<div class="col-md-6 text-center">
 						<p><strong>Tanggal Lahir</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
-						<p>ambil dari database</p>
+						<p>{{ $user->tgl_lahir }}</p>
 					</div>
 				</div>
 			</div>
