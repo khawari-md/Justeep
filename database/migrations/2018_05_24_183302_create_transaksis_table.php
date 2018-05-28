@@ -16,7 +16,7 @@ class CreateTransaksisTable extends Migration
         Schema::create('transaksis', function (Blueprint $table) {
             $table->increments('transaksi_id');
             $table->integer('onr_id')->unsigned();
-            $table->integer('user_id')->unsigned();
+            $table->string('user_id');
             $table->integer('total_harga');
             $table->integer('rate');
 

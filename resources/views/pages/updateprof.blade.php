@@ -1,7 +1,7 @@
 @extends('layouts.navbar')
 
 @section('content')
-  {!! Form::open(array('route' => 'forms.store','class' => 'form-submit', 'files' => true)) !!}
+  {!! Form::open(array('route' => 'profiles.store','class' => 'form-submit', 'files' => true)) !!}
 	<h1 class="active">Update profile here : </h1>
 	<p> Please fill this form to update your account :</p><hr>
 	{{ Form::label('user_nama', 'Nama : ') }}

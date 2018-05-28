@@ -7,7 +7,12 @@ use Illuminate\Http\Request;
 
 class VerifyController extends Controller
 {
-	
+	/**
+	 * verify the user with given token 
+	 *
+	 * @param string $token
+	 * @return Response
+	 */
 	public function verify($token)
 	{
 		$user = User::where('token',$token)->firstOrFail()->$user->update(['token' => null]);

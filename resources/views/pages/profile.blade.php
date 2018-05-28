@@ -40,7 +40,7 @@
 						<p><strong>Nama</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
-						<p>ambil dari database</p>
+						<p>{{ $user->user_nama }}</p>
 					</div>
 
 					<div class="col-md-6 text-center">

@@ -43,8 +43,17 @@
             <li><a href="{{ url('profile') }}">Profile</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
+            @if (Route::has('login'))
+            @auth
             <li><a href="/submit"><span class="glyphicon glyphicon-send"></span> Submit</a></li>
-            <li><a href="/login"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+            @else
+            <li><a href="/loginin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            @endauth
+            @endif
           </ul>
         </div>
       </div>

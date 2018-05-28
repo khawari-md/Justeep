@@ -4,8 +4,10 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Uuid;
 
 class RegisterController extends Controller
 {
@@ -27,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/index';
 
     /**
      * Create a new controller instance.
@@ -51,6 +53,9 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
+            'alamat' => 'required|string|max:255',
+            'jenis_kel' => 'required|string|max:255',
+            'tgl_lahir' => 'required|string|max:255',
         ]);
     }
 
@@ -62,19 +67,19 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $id = uuid::generate();
+        $id = uuid::generate()->string;
         $user = User::create([
-            'id' => $id,
-            'name' => $data['name'],
+            'user_id' => $id,
+            'user_nama' => $data['name'],
             'email' => $data['email'],
-            'password' => bcrypt($data['password']),
+            'password' => hash::make($data['password']),
             'alamat' => $data['alamat'],
-            'jk' => $data['jk'],
-            'lahir' => $data['lahir'],
+            'jenis_kel' => $data['jenis_kel'],
+            'tgl_lahir' => $data['tgl_lahir'],
             'token' => $id,
         ]);
 
-        $user->sendVerifyEmail();
+        $user->sendVerificationEmail();
 
         return $user;
     }

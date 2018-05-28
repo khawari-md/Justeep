@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -28,7 +29,8 @@ class PagesController extends Controller
     }
 
     public function getProfile () {
-    	return view('pages.profile');
+        $user = Auth::user();
+    	return view('pages.profile',['user'=>$user]);
     }
 
    	public function getSubmit () {
