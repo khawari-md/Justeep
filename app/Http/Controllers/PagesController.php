@@ -35,7 +35,8 @@ class PagesController extends Controller
     }
 
    	public function getSubmit () {
-   		return view('pages.submit');
+        $user = Auth::user();
+   		return view('pages.submit', ['user' => $user]);
    	}
 
     public function getUpdateProf() {

@@ -29,6 +29,7 @@ class User extends Authenticatable
     ];
 
     protected $primaryKey = 'user_id';
+    public $incrementing = false;
 
     /**
      * The attributes that should be hidden for arrays.
