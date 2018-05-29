@@ -14,7 +14,6 @@
 // Route::get('/', function () {
 // 	return view('welcome');
 // });
-
 Auth::routes();
 
 Route::get('verify/{token}','VerifyController@verify')->name('verify');
@@ -32,7 +31,6 @@ Route::get('/profile','PagesController@getProfile');
 Route::get('/submit','PagesController@getSubmit');
 
 Route::post('submit','FormController@submit');
-
 Route::resources([
 	'forms' => 'FormController',
 	'logins' => 'LoginController',
