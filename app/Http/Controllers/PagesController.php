@@ -43,4 +43,13 @@ class PagesController extends Controller
         $user = Auth::user();
         return view('pages.updateprof', ['user' => $user]);
     }
+
+    public function getCart() {
+        $user = Auth::user();
+        return view('pages.cart', ['user' => $user]);
+    }
+
+    public function getKota () {
+        return view('pages.kota');
+    }
 }

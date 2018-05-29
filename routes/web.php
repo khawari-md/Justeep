@@ -30,6 +30,8 @@ Route::get('/loginin', 'PagesController@getLogin');
 Route::get('/index','PagesController@getIndex');
 Route::get('/profile','PagesController@getProfile');
 Route::get('/submit','PagesController@getSubmit');
+Route::get('/cart','PagesController@getCart');
+Route::get('/kota','PagesController@getKota');
 
 Route::post('submit','FormController@submit');
 
