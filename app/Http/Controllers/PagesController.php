@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 
 class PagesController extends Controller
 {
+
     public function getIndex () {
     	return view('pages.index');
     }
@@ -30,7 +31,7 @@ class PagesController extends Controller
 
     public function getProfile () {
         $user = Auth::user();
-    	return view('pages.profile',['user'=>$user]);
+    	return view('pages.profile', ['user' => $user]);
     }
 
    	public function getSubmit () {
@@ -38,6 +39,7 @@ class PagesController extends Controller
    	}
 
     public function getUpdateProf() {
-        return view('pages.updateprof');
+        $user = Auth::user();
+        return view('pages.updateprof', ['user' => $user]);
     }
 }

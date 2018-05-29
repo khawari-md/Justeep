@@ -11,12 +11,17 @@ use App\User;
 class ProfileController extends Controller
 {
     public function update(Request $request) {
-    	$id = Auth::id();
 
-    	$data->user_id = $id;
-    	$data->user_nama = $request->user_nama;
-    	$data->alamat = $request->alamat;
-    	$data->aboutme = $request->aboutme;
+    	// $data->user_nama = $request->user_nama;
+    	// $data->alamat = $request->alamat;
+    	// $data->aboutme = $request->aboutme;
+    	$data = array(
+		'user_nama' = $request->user_nama;
+    	'alamat' = $request->alamat;
+    	'aboutme' = $request->aboutme;
+    	)
+
+    	dd($data);
 
     	User::find($id)->update($data);
 
