@@ -35,8 +35,12 @@ Route::get('/kota','PagesController@getKota');
 
 Route::post('submit','FormController@submit');
 
+Route::post('profiles/{user}', ['as' => 'profiles.edit', 'uses' => 'ProfileController@edit']);
+Route::post('profiles/{user}/update', ['as' => 'profiles.update', 'uses' => 'ProfileController@update']);
+
 Route::resources([
 	'forms' => 'FormController',
-	'logins' => 'LoginController',
-	'profiles' => 'ProfileController'
+	'logins' => 'LoginController'
+	// 'profiles' => 'ProfileController'
 ]);
+

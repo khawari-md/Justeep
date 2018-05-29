@@ -17,7 +17,7 @@
 					</div>
 					<div class="col-xs-7">
 						<h2>{{ $user->user_nama }}</h2>
-						<p>About Me<br>ambil dari database</p>
+						<p>About Me<br>{{ $user->aboutme }}</p>
 						<p>Rate :</p>
 					</div>
 					<div class="text-center">
@@ -61,7 +61,7 @@
 						<p><strong>Telephone Number</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
-						<p>ambil dari database</p>
+						<p>{{ $user->no_telp }}</p>
 					</div>
 
 					<div class="col-md-6 text-center">
