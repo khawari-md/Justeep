@@ -58,7 +58,8 @@
                     <th>Jenis layanan:</th>
                     <td>{{$data->onr}}</td>
                   </tr>
-                </table>        
+                </table>
+                <a href="#"><button class="btn btn-warning btn-block"> ACCEPT </button></a>          
 	        </div>
 	      </div>
 	    </div>
