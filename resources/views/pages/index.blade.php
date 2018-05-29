@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="text-center margin">
-        <a href="/kota" class="btn btn-info" role="button">Show More</a>
+        <a href="/kategori" class="btn btn-info" role="button">Show More</a>
       </div>
     </div>
 @endsection

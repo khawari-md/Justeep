@@ -50,7 +50,7 @@ class PagesController extends Controller
         return view('pages.cart', ['user' => $user]);
     }
 
-    public function getKota () {
-        return view('pages.kota');
+    public function getKategori () {
+        return view('pages.kategori');
     }
 }

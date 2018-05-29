@@ -36,7 +36,7 @@
                 <li><a href="#">Olahraga</a></li>
                 <li><a href="#">Rumah Tangga</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Show More</a></li>
+                <li><a href="{{ url('kategori') }}">Show More</a></li>
               </ul>
             </li>
             <li><a href="{{ url('browse') }}">Browse</a></li>
