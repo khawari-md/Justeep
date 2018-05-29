@@ -51,6 +51,7 @@
           <ul class="nav navbar-nav navbar-right">
             @if (Route::has('login'))
             @auth
+            <li><a href="#"><span class="glyphicons glyphicons-shopping-cart"></span> Cart</a></li>
             <li><a href="/submit"><span class="glyphicon glyphicon-send"></span> Submit</a></li>
             <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
