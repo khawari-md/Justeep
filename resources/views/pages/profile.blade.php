@@ -16,7 +16,7 @@
 						</div>
 					</div>
 					<div class="col-xs-7">
-						<h2>ini nama ambil dari database</h2>
+						<h2>{{ $user->user_nama }}</h2>
 						<p>About Me<br>ambil dari database</p>
 						<p>Rate :</p>
 					</div>
