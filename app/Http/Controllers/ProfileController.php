@@ -10,7 +10,7 @@ use App\User;
 
 class ProfileController extends Controller
 {
-    public function update(Request $request) {
+    public function update($id, Request $request) {
 
     	// $data->user_nama = $request->user_nama;
     	// $data->alamat = $request->alamat;
@@ -25,6 +25,6 @@ class ProfileController extends Controller
 
     	User::find($id)->update($data);
 
-    	return redirect()->action('PagesController@getSubmit');
+    	return redirect()->action('PagesController@getProfile');
     }
 }

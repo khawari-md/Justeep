@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="atas"></div>
-<form class="form-submit" action="{{ action('ProfileController@update') }}">
+<form class="form-submit" action="{{ action('ProfileController@update', ['id' => $user]) }}" method="post">
 	<h1 class="active">Update profile here : </h1>
 	<p> Please fill this form to update your account :</p><hr>
 	<div class="form-control">
