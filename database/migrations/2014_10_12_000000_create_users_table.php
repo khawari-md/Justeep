@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->integer('rating')->nullable();
             $table->string('token')->nullable();
             $table->text('aboutme')->nullable();
+            $table->integer('no_telp')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
