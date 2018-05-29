@@ -40,7 +40,13 @@
               </ul>
             </li>
             <li><a href="{{ url('browse') }}">Browse</a></li>
-            <li><a href="{{ url('profile') }}">Profile</a></li>
+            @if (Route::has('login'))
+            @auth
+            <li><a href="{{ url('profile') }}">Profile</a>
+            @else
+            @endauth
+            @endif
+            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             @if (Route::has('login'))
