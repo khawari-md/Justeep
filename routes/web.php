@@ -24,13 +24,15 @@ Route::get('/', 'PagesController@getIndex');
 Route::get('/browse', 'FormController@show');
 Route::get('/itemof', 'FormController@showof');
 Route::get('/itemreq', 'FormController@showreq');
+// Route::post('/cart','FormController@showCart');
+Route::get('/cart/{id}', 'FormController@showCart');
+
 
 Route::get('/updateProfile', 'PagesController@getUpdateProf');
 Route::get('/loginin', 'PagesController@getLogin');
 Route::get('/index','PagesController@getIndex');
 Route::get('/profile','PagesController@getProfile');
 Route::get('/submit','PagesController@getSubmit');
-Route::get('/cart','PagesController@getCart');
 Route::get('/kategori','PagesController@getKategori');
 
 Route::post('submit','FormController@submit');

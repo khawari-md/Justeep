@@ -14,8 +14,7 @@ class PagesController extends Controller
     }
 
     public function getBrowse () {
-    	return view('pages.browse', ['id' => $id]
-    );
+    	return view('pages.browse', ['id' => $id]);
     }
 
     public function getItemOf () {

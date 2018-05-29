@@ -11,6 +11,6 @@ class onr extends Model
     protected $fillable = [
         'nama_barang', 'deskripsi', 'harga', 'jumlah', 'waktu', 'kota', 'onr', 'kategori'
     ];
-
+    protected $primaryKey = 'onr_id';
  	public $timestamps = false;   
 }

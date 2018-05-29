@@ -58,7 +58,8 @@
                     <th>Jenis layanan:</th>
                     <td>{{$data->onr}}</td>
                   </tr>
-                </table>        
+                </table>
+                <a href="/cart/{{$data->onr_id}}"><button class="btn btn-success btn-block"> BUY </button></a>        
 	        </div>
 	      </div>
 	    </div>

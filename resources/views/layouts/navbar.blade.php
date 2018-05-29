@@ -9,10 +9,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- CSS --> 
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <link rel="stylesheet" type="text/css" href="browse.css">
-    <link rel="stylesheet" type="text/css" href="login.css">
-    <link rel="stylesheet" type="text/css" href="profil.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('home.css') }}">
+{{--     {{ HTML::style('home.css') }}
+    {{ HTML::style('browse.css') }}
+    {{ HTML::style('login.css') }}
+    {{ HTML::style('profil.css') }} --}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('browse.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('login.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('profil.css') }}">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <body>
@@ -51,14 +55,13 @@
           <ul class="nav navbar-nav navbar-right">
             @if (Route::has('login'))
             @auth
-            <li><a href="/cart"><span class="glyphicons glyphicons-shopping-cart"></span> Cart</a></li>
             <li><a href="/submit"><span class="glyphicon glyphicon-send"></span> Submit</a></li>
             <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             {{ csrf_field() }}
             </form>
             @else
-            <li><a href="/loginin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="{{ url('loginin') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             @endauth
             @endif
           </ul>

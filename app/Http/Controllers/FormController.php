@@ -47,4 +47,9 @@ class FormController extends Controller
     	$data = onr::all();
     	return view('pages.itemreq',['data' => $data]);
     }
+
+    public function showcart(onr $id)
+    {
+        return view('pages.cart',['bodoamat' => $id]);
+    }
 }

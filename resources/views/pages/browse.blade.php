@@ -67,7 +67,10 @@
                     <td>{{$data->onr}}</td>
                   </tr>
                 </table>
-                <a href="#"><button class="btn btn-success btn-block"> BUY </button></a>        
+                {{-- {!! Form::open( array('action' => array('FormController@showCart'), 'class' => 'form-submit')) !!}
+                {{ Form::submit('BUY', array('class' => 'btn btn-success btn-block', 'value' => $data->onr_id)) }}
+                {!! Form::close() !!} --}}
+                <a href="/cart/{{$data->onr_id}}"><button class="btn btn-success btn-block"> BUY </button></a>
 	        </div>
 	      </div>
 	    </div>
@@ -120,7 +123,7 @@
                     <td>{{$data->onr}}</td>
                   </tr>
                 </table>
-                <a href="#"><button class="btn btn-warning btn-block"> ACCEPT </button></a>  
+                <a href="/cart/{{$data->onr_id}}"><button class="btn btn-warning btn-block"> ACCEPT </button></a>  
 	        </div>
 	      </div>
 	    </div>

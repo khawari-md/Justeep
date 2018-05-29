@@ -10,7 +10,7 @@
 					</div>
 					<div class="col-md-6 text-center">
 						<!-- nanti benerin -->
-						<p>hai</p>
+						<p>{{ $bodoamat->nama_barang }}</p>
 						
 					</div>
 
@@ -26,7 +26,15 @@
 						<p><strong>Kategori :</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
-						<p>hai</p>
+						<p>@if($bodoamat->kategori =='1')
+                    Makanan
+                    @elseif($bodoamat->kategori =='2')
+                    Tas dan Aksesoris
+                    @elseif($bodoamat->kategori =='3')
+                    Ibu dan Anak
+                    @elseif($bodoamat->kategori =='4')
+                    Games
+                    @endif</p>
 						
 					</div>
 
@@ -34,7 +42,7 @@
 						<p><strong>Deskripsi :</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
-						<p>hai</p>
+						<p>{{ $bodoamat->deskripsi }}</p>
 						
 					</div>
 
@@ -42,7 +50,7 @@
 						<p><strong>Harga/pcs :</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
-						<p>hai</p>
+						<p>{{ $bodoamat->harga }}</p>
 						
 					</div>
 					{{ Form::label('jumlah', 'Jumlah :', array('class' => 'col-md-6 text-center')) }}
@@ -51,14 +59,14 @@
 						<p><strong>Kota Barang :</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
-						<p>hai</p>
+						<p>{{ $bodoamat->kota_barang }}</p>
 					</div>
 
 					<div class="col-md-6 text-center">
 						<p><strong>Kota Tujuan :</strong></p>
 					</div>
 					<div class="col-md-6 text-center">
-						<p>hai</p>
+						<p>{{ $bodoamat->kota_onr }}</p>
 						
 					</div>
 	
