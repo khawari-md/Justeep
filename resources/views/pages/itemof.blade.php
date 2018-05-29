@@ -28,7 +28,15 @@
 	        	<table class="table table-borderless mt-2">
                   <tr>
                     <th>Kategori:</th>
-                    <td>{{$data->kategori}}</td>
+                    @if($data->kategori =='1')
+                    <td>Makanan</td>
+                    @elseif($data->kategori =='2')
+                    <td>Tas dan Aksesoris</td>
+                    @elseif($data->kategori =='3')
+                    <td>Ibu dan Anak</td>
+                    @elseif($data->kategori =='4')
+                    <td>Games</td>
+                    @endif
                   </tr>
                   <tr>
                     <th>Deskripsi:</th>
@@ -59,7 +67,11 @@
                     <td>{{$data->onr}}</td>
                   </tr>
                 </table>
+<<<<<<< HEAD
                 <a href="/cart/{{$data->onr_id}}"><button class="btn btn-success btn-block"> BUY </button></a>        
+=======
+                <a href="#"><button class="btn btn-success btn-block"> BUY </button></a>
+>>>>>>> 55aa947fd908672704f963035fb742b3f6946081
 	        </div>
 	      </div>
 	    </div>
