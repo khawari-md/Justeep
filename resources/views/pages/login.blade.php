@@ -13,7 +13,7 @@
                         {{ csrf_field() }}
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -24,7 +24,7 @@
                         </div>
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <input id="password" type="password" class="form-control" name="password" required>
 
                                 @if ($errors->has('password'))
@@ -36,7 +36,7 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
+                            <div class="col-md-7 col-md-offset-4">
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
@@ -68,7 +68,7 @@
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Name</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
 
                                 @if ($errors->has('name'))
@@ -82,7 +82,7 @@
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 
                                 @if ($errors->has('email'))
@@ -93,24 +93,24 @@
                             </div>
                         </div>
 
-                <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                    <label for="password" class="col-md-4 control-label">Password</label>
+                      <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                          <label for="password" class="col-md-4 control-label">Password</label>
 
-                    <div class="col-md-6">
-                        <input id="password" type="password" class="form-control" name="password" required>
+                          <div class="col-md-7">
+                              <input id="password" type="password" class="form-control" name="password" required>
 
-                        @if ($errors->has('password'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('password') }}</strong>
-                            </span>
-                        @endif
-                    </div>
-                </div>
+                              @if ($errors->has('password'))
+                                  <span class="help-block">
+                                      <strong>{{ $errors->first('password') }}</strong>
+                                  </span>
+                              @endif
+                         </div>
+                      </div>
 
                 <div class="form-group">
                     <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
 
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                     <label for="alamat" class="col-md-4 control-label">Alamat</label>
 
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <input id="alamat" type="text" class="form-control" name="alamat" value="{{ old('alamat') }}" required autofocus>
 
                         @if ($errors->has('alamat'))
@@ -132,7 +132,7 @@
                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                     <label for="no_telp" class="col-md-4 control-label">Telephone Number</label>
 
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <input id="no_telp" type="number" class="form-control" name="no_telp" value="{{ old('no_telp') }}" required autofocus>
 
                         @if ($errors->has('no_telp'))
@@ -170,7 +170,7 @@
                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                     <label for="tgl_lahir" class="col-md-4 control-label">Tanggal lahir</label>
 
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <input id="tgl_lahir" type="date" class="form-control" name="tgl_lahir" value="{{ old('tgl_lahir') }}" required autofocus>
 
                          @if ($errors->has('tgl_lahir'))
