@@ -1,50 +1,16 @@
 @extends('layouts.navbar')
 
 @section('content')
-<div class="atas">Category</div>
+<div class="atas">Item berdasarkan Kota</div>
 <br>
 <div class="container">
-	<div class="row">
-		<div class="col-xs-6 col-sm-6">
-			<div class="w3-container">
-				<div class="w3-card-4" style="width:50%">
-					<img src="img_fjords.jpg" alt="Norway" style="width:100%">
-					<div class="w3-container w3-center">
-						<p>The Troll's tongue in Hardanger, Norway</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6">
-			<div class="w3-container">
-				<div class="w3-card-4" style="width:50%">
-					<img src="img_fjords.jpg" alt="Norway" style="width:100%">
-					<div class="w3-container w3-center">
-						<p>The Troll's tongue in Hardanger, Norway</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6">
-			<div class="w3-container">
-				<div class="w3-card-4" style="width:50%">
-					<img src="img_fjords.jpg" alt="Norway" style="width:100%">
-					<div class="w3-container w3-center">
-						<p>The Troll's tongue in Hardanger, Norway</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6">
-			<div class="w3-container">
-				<div class="w3-card-4" style="width:50%">
-					<img src="img_fjords.jpg" alt="Norway" style="width:100%">
-					<div class="w3-container w3-center">
-						<p>The Troll's tongue in Hardanger, Norway</p>
-					</div>
-				</div>
-			</div>
-		</div>
+	  <div class="row">
+	    <div class="col-sm-4">
+	      <div class="panel panel-success">
+	        <div class="panel-heading">Jakarta</div> 
+	        <div class="panel-body"><img src="img/jakarta.png" class="img-responsive" style="height:100%; width:100%;" alt="Image"></div>
+	      </div>
+	    </div>
 	</div>
 </div>
 @endsection

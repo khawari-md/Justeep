@@ -15,6 +15,7 @@ html, body{
 
 .navbar-inverse .container-fluid{
 	background-color: #565a5d;
+	display: block;
 }
 
 .navbar-inverse .container-fluid ul li{

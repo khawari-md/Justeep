@@ -11,22 +11,22 @@
     </div>
 
     <div class="container-fluid bg-2 text-center">    
-      <h2 class="margin" style="font-family: Fira Sans;">Kota Mana yang Kalian Cari?</h2><br>
+      <h2 class="margin" style="font-family: Fira Sans;">Kategori apa yang Kalian Cari?</h2><br>
       <div class="row">
         <div class="col-sm-4">
-          <h3>JAKARTA</h3>
+          <h3>Makanan</h3>
           <p style="font-family: Poppins;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#"><img src="img/jakarta.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
+          <a href="#"><img src="img/makanan.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
         </div>
         <div class="col-sm-4"> 
-          <h3>MEDAN</h3>
+          <h3>Tas dan Aksesoris</h3>
           <p style="font-family: Poppins;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#"><img src="img/medan.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
+          <a href="#"><img src="img/aks.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
         </div>
         <div class="col-sm-4"> 
-          <h3>MALANG</h3>
+          <h3>Games</h3>
           <p style="font-family: Poppins;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#"><img src="img/malang.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
+          <a href="#"><img src="img/games.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
         </div>
       </div>
       <div class="text-center margin">
