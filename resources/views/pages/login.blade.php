@@ -4,20 +4,17 @@
 	<div class="atas"></div>
 	<div class="row align-items-center">
 		<div class="col-md-5 col-sm-offset-1">
-			{{-- {!! Form::open(array('route' => 'logins.store')) !!} --}}
-			<h1 class="active">Login here :</h1>
-			<div class="imgcontainer">
-				<img src="img/avatar.png" alt="Avatar" class="avatar">
-			</div>
 			<form class="form-horizontal" method="POST" action="{{ route('login') }}">
+				{{-- {!! Form::open(array('route' => 'logins.store')) !!} --}}
+				<h1 class="active">Login here :</h1>
+				<div class="imgcontainer">
+					<img src="img/avatar.png" alt="Avatar" class="avatar">
+				</div>
                         {{ csrf_field() }}
-
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-
                                 @if ($errors->has('email'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -25,10 +22,8 @@
                                 @endif
                             </div>
                         </div>
-
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
-
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control" name="password" required>
 
@@ -51,30 +46,23 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <button type="submit" class="tombol">
                                     Login
                                 </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
                             </div>
+                            <div class="col-sm-10 col-sm-offset-1 text-center">
+                            	<a class="btn btn-link" href="{{ route('password.request') }}">Forgot Your Password?</a>
+                        	</div>
                         </div>
                     </form>
-			  {{-- {{ Form::label('user_nama', 'Username: ') }}
-			  {{ Form::text('user_nama', null, array('class' => 'form-control', 'placeholder' => 'Username')) }}
-
-			  {{ Form::label('password', 'Password: ') }}
-			  {{ Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password')) }}
-			  {{ Form::submit('Login', array('class' => 'tombol')) }}
-			{!! Form::close() !!} --}}
 		</div>
 		<div class="col-md-5">
-			{{-- {!! Form::open(array('route' => 'logins.create')) !!} --}}
-			<h1 class="active">Sign Up:</h1>
-			<p> Please fill this form to create an account</p><hr>
 			<form class="form-horizontal" method="POST" action="{{ route('register') }}">
+				{{-- {!! Form::open(array('route' => 'logins.create')) !!} --}}
+				<h1 class="active">Sign Up:</h1>
+				<p> Please fill this form to create an account</p><hr>
+			
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -170,28 +158,15 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <button type="submit" class="tombol">
                                     Register
                                 </button>
+                                <br>
                             </div>
                         </div>
                     </form>
-			  {{-- {{ Form::label('user_nama', 'Username: ') }}
-			  {{ Form::text('user_nama', null, array('class' => 'form-control', 'placeholder' => 'Username')) }}
-
-			  {{ Form::label('email', 'Email: ') }}
-			  {{ Form::text('email', null, array('class' => 'form-control', 'placeholder' => 'Email')) }}
-
-			  {{ Form::label('password', 'Password: ')}}
-			  {{ Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password')) }}
-
-			  {{ Form::label('alamat', 'Alamat: ') }}
-			  {{ Form::text('alamat', null, array('class' => 'form-control', 'placeholder' => 'Alamat')) }}
-			  
-			  {{ Form::label('jenis_kel', 'Jenis Kelamin:') }} --}}
-			 {{--  <br>
-			  <div class="radio-inline">
+			  <!-- <div class="radio-inline">
 				  <label>
 				    <input type="radio" name="jenis_kel" id="optionsRadios1" value="Perempuan" checked>Perempuan
 				  </label>
@@ -201,13 +176,7 @@
 				    <input type="radio" name="jenis_kel" id="optionsRadios2" value="Laki-Laki">
 				    Laki-Laki
 				  </label>
-			  </div>
-			  <br> --}}
-			  {{-- {{ Form::label('tgl_lahir', 'Tanggal Lahir: ', array('style' => 'margin-top: 10px')) }}
-			  {{ Form::date('tgl_lahir', null, array('class' => 'form-contol')) }}
-			  
-			  {{ Form::submit('Submit', array('class' => 'tombol')) }}
-			{!! Form::close() !!} --}}
+			  </div> -->
 		</div>
 	</div>
 @endsection
