@@ -24,7 +24,7 @@
 	      <div class="panel panel-warning">
 	        <div class="panel-heading">
             {{$data->nama_barang}}
-              <a href=""><button class="btn btn-default btn-small" style="margin-left: 110px"><span class="glyphicons glyphicons-edit"></span> Edit</button></a>
+              <a href=""><button class="btn btn-default btn-small"><span class="glyphicons glyphicons-edit"></span> Edit</button></a>
               <a href=""><button class="btn btn-default btn-small"><span class="glyphicons glyphicons-delete"></span> Delete</button></a>
           </div>
 	        <div class="panel-body"><img src="inidiambilfetch2an" class="img-responsive" style="height:150px; width:100%;" alt="Image"></div>
