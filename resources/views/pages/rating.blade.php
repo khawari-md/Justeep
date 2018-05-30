@@ -12,8 +12,17 @@
 					<h1 class="active"> Total bayar :</h1>
 					<h2 class="active"> {{ $total }} </h2>
 				</div>
-				<div class="row" style="text-align: center;">
-					
+				<div class="btn btn-block">
+					<button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				Large button
+  					</button>
+  					<div class="dropdown-menu">
+  						<a class="dropdown-item" href="#">Meh... 1 star.</a>
+  						<a class="dropdown-item" href="#">So-so. 2 Stars.</a>
+  						<a class="dropdown-item" href="#">Pretty good! 3 Stars.</a>
+  						<a class="dropdown-item" href="#">Good job!! 4 Stars!</a>
+  						<a class="dropdown-item" href="#">Excellent work!! 5 Stars !!</a>
+  					</div>
 				</div>
 			</div>
 		</div>
