@@ -3,8 +3,7 @@
 @section('content')
 	<h1 class="active">Submit here : </h1>
 	<p> Please fill this form to do transaction : </p><hr>
-	@if('alert')<h1>ERROR COK</h1>
-	@endif
+	
 	<div class="row">
 					<form class="form-submit" method="post" action="{{ route('forms.transaksi') }}">
 						{{ csrf_field() }}
