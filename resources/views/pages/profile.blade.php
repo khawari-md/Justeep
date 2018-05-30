@@ -42,6 +42,37 @@
 					</div>
 				</div>
 				<hr>
+				<div class="container-fluid">
+					<div class="col-md-3 text-center">
+						<div style="font-size:3em; color: dark grey">
+							<i class="fas fa-utensils"></i>
+						</div>
+						<p>Makanan</p>
+						<p><strong>hai</strong></p>
+					</div>
+					<div class="col-md-3 text-center">
+						<div style="font-size:3em; color: dark grey">
+							<i class="fas fa-shopping-bag"></i>
+						</div>
+						<p>Tas dan Aksesoris</p>
+						<p><strong>hai</strong></p>
+					</div>
+					<div class="col-md-3 text-center">
+						<div style="font-size:3em; color: dark grey">
+							<i class="fas fa-child"></i>
+						</div>
+						<p>Ibu dan Anak</p>
+						<p><strong>hai</strong></p>
+					</div>
+					<div class="col-md-3 text-center">
+						<div style="font-size:3em; color: dark grey">
+							<i class="fas fa-child"></i>
+						</div>
+						<p>Games</p>
+						<p><strong>hai</strong></p>
+					</div>
+				</div>
+				<hr>
 				<div class="row">
 					<div class="col-md-6 text-center">
 						<p><strong>Nama</strong></p>
