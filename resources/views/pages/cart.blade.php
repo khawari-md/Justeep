@@ -1,10 +1,13 @@
 @extends('layouts.navbar')
 
 @section('content')
-  {!! Form::open(array('route' => 'forms.store','class' => 'form-submit', 'files' => true)) !!}
 	<h1 class="active">Submit here : </h1>
 	<p> Please fill this form to do transaction : </p><hr>
+	@if('alert')<h1>ERROR COK</h1>
+	@endif
 	<div class="row">
+					<form class="form-submit" method="post" action="{{ route('forms.transaksi') }}">
+						{{ csrf_field() }}
 					<div class="col-md-6 text-center">
 						<p><strong>Nama Barang :</strong></p>
 					</div>
@@ -53,8 +56,11 @@
 						<p>{{ $bodoamat->harga }}</p>
 						
 					</div>
-					{{ Form::label('jumlah', 'Jumlah :', array('class' => 'col-md-6 text-center')) }}
-					{{ Form::text('jumlah', null, array('class' => 'form-control col-md-6 text-center', 'style' => 'width: 50%;', 'placeholder' => '1,2,3...')) }}
+			{{-- 		{{ Form::label('jumlah', 'Jumlah :', array('class' => 'col-md-6 text-center')) }} --}}
+					<label class="col-md-6 text-center" id="jumlah">Jumlah :</label>
+					{{-- {{ Form::text('jumlah', null, array('class' => 'form-control col-md-6 text-center', 'style' => 'width: 50%;', 'placeholder' => '1,2,3...')) }} --}}
+					<input type="text" name="jumlah" class="form-control col-md-6 text-center" style="width: 50%;" placeholder="Jumlah barang yang diinginkan">
+					<input type="hidden" name="onrid" value="{{ $bodoamat->onr_id }}">
 			  		<div class="col-md-6 text-center">
 						<p><strong>Kota Barang :</strong></p>
 					</div>
@@ -71,7 +77,9 @@
 					</div>
 	
 	<br>
-	{{ Form::submit('Submit', array('class' => 'tombol')) }}
-  {!! Form::close() !!}
+	<button class="tombol" type="submit"> Submit </button>
+	{{-- {{ Form::submit('Submit', array('class' => 'tombol')) }}
+  {!! Form::close() !!} --}}
+</form>
 </div>
 @endsection

@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\onr;
+use App\transaksi;
 
 class FormController extends Controller
 {
@@ -23,7 +25,7 @@ class FormController extends Controller
     	$data->kota_barang = $request->kota_barang;
     	$data->kota_onr = $request->kota_onr;
     	$data->onr = $request->onr;
-    	$data->pelaku_id = $user; //belom ada session
+    	$data->pelaku_id = $user;
     	$data->onr_foto = $request->onr_foto;
     	$data->save();
 
@@ -51,5 +53,26 @@ class FormController extends Controller
     public function showcart(onr $id)
     {
         return view('pages.cart',['bodoamat' => $id]);
+    }
+
+    public function transaksi(Request $request)
+    {
+
+        $juml = $request->jumlah;
+        $id = $request->onrid;
+        // $jmlonr = DB::select(DB::raw("SELECT jumlah FROM onrs WHERE onrs.onr_id = '$id'"));
+        // dd($jmlonr);
+        $jmlonr = onr::where('onr_id', $id)->pluck('jumlah');
+        // dd($jmlonr[0]);
+
+        if ($juml < $jmlonr[0]) {
+        DB::select(DB::raw("UPDATE onrs o SET o.jumlah = o.jumlah-'$juml' WHERE o.onr_id = '$id'"));
+
+        return view('pages.index')->with('alert','Pembelian Berhasil!');   
+        }
+
+        else {
+            return redirect()->back()->with('alert','Stok barang tidak cukup!');
+        }
     }
 }

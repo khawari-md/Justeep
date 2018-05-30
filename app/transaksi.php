@@ -9,4 +9,6 @@ class transaksi extends Model
     protected $fillable = [
         'total_harga', 'rate',
     ];
+    protected $primaryKey = 'onr_id';
+ 	public $timestamps = false;
 }
