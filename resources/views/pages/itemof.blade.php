@@ -25,10 +25,10 @@
 	        <div class="panel-heading">
             <div class="col-md-6">{{$data->nama_barang}}</div>
             <div class="col-md-6">
-              <span class="glyphicons glyphicons-edit"></span>
-              <span class="glyphicons glyphicons-delete"></span>
+              <a href=""><button class="btn btn-default"><span class="glyphicons glyphicons-edit"></span></button></a>
+              <a href=""><button class="btn btn-default"><span class="glyphicons glyphicons-delete"></span></button></a>
             </div>
-          </div> 
+          </div>
 	        <div class="panel-body"><img src="inidiambilfetch2an" class="img-responsive" style="height:150px; width:100%;" alt="Image"></div>
 	        <div class="panel-footer">
 	        	<table class="table table-borderless mt-2">
