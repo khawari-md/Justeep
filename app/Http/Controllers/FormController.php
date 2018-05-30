@@ -60,15 +60,21 @@ class FormController extends Controller
 
         $juml = $request->jumlah;
         $id = $request->onrid;
+        
         // $jmlonr = DB::select(DB::raw("SELECT jumlah FROM onrs WHERE onrs.onr_id = '$id'"));
         // dd($jmlonr);
         $jmlonr = onr::where('onr_id', $id)->pluck('jumlah');
         // dd($jmlonr[0]);
+        
 
         if ($juml < $jmlonr[0]) {
         DB::select(DB::raw("UPDATE onrs o SET o.jumlah = o.jumlah-'$juml' WHERE o.onr_id = '$id'"));
 
-        return view('pages.rating')->with('alert','Pembelian Berhasil!');   
+        DB::select(DB::raw("UPDATE transaksis t, onrs o SET t.total_harga = '$juml'*o.harga WHERE o.onr_id = '$id'"));
+        $total = DB::select(DB::raw("SELECT t.total_harga FROM transaksis t, onrs o WHERE o.onr_id = '$id'"));
+        // dd($total[0]->total_harga);
+
+        return view('pages.rating', ['total' => $total[0]->total_harga]);   
         }
 
         else {
