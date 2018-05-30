@@ -12,17 +12,16 @@
 					<h1 class="active"> Total bayar :</h1>
 					<h2 class="active"> {{ $total }} </h2>
 				</div>
-				<div class="btn btn-block">
-					<button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    				Large button
-  					</button>
-  					<div class="dropdown-menu">
-  						<a class="dropdown-item" href="#">Meh... 1 star.</a>
-  						<a class="dropdown-item" href="#">So-so. 2 Stars.</a>
-  						<a class="dropdown-item" href="#">Pretty good! 3 Stars.</a>
-  						<a class="dropdown-item" href="#">Good job!! 4 Stars!</a>
-  						<a class="dropdown-item" href="#">Excellent work!! 5 Stars !!</a>
-  					</div>
+				<div class="row text-center">
+					<form class="form-submit" method="post" action="{{ route('forms.afttrx') }}">
+						{{ csrf_field() }}
+						<input type="radio" name="rate" value="1" checked="true"> Meh.. 1 star <br>
+						<input type="radio" name="rate" value="2"> So-so. 2 stars <br>
+						<input type="radio" name="rate" value="3"> Not bad. 3 stars <br>
+						<input type="radio" name="rate" value="4"> Pretty good! 4 stars <br>
+						<input type="radio" name="rate" value="5"> Well-done!! 5 stars! <br><br>
+						<button type="submit" class="btn btn-block btn-info">End Transaction</button>
+					</form>
 				</div>
 			</div>
 		</div>

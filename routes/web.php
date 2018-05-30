@@ -27,7 +27,6 @@ Route::get('/itemreq', 'FormController@showreq');
 // Route::post('/cart','FormController@showCart');
 Route::get('/cart/{id}', 'FormController@showCart');
 
-
 Route::get('/updateProfile', 'PagesController@getUpdateProf');
 Route::get('/loginin', 'PagesController@getLogin');
 Route::get('/index','PagesController@getIndex');
@@ -40,6 +39,7 @@ Route::post('submit','FormController@submit');
 Route::post('profiles/{user}', ['as' => 'profiles.edit', 'uses' => 'ProfileController@edit']);
 Route::post('profiles/{user}/update', ['as' => 'profiles.update', 'uses' => 'ProfileController@update']);
 Route::post('rating', ['as' => 'forms.transaksi', 'uses' => 'FormController@transaksi']);
+Route::post('rating2', ['as' => 'forms.afttrx', 'uses' => 'FormController@afttrx']);
 
 Route::resources([
 	'forms' => 'FormController',

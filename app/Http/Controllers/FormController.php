@@ -55,6 +55,11 @@ class FormController extends Controller
         return view('pages.cart',['bodoamat' => $id]);
     }
 
+    public function afttrx()
+    {
+        return view('pages.index');
+    }
+
     public function transaksi(Request $request)
     {
 
