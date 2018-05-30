@@ -68,7 +68,7 @@ class FormController extends Controller
         if ($juml < $jmlonr[0]) {
         DB::select(DB::raw("UPDATE onrs o SET o.jumlah = o.jumlah-'$juml' WHERE o.onr_id = '$id'"));
 
-        return view('pages.index')->with('alert','Pembelian Berhasil!');   
+        return view('pages.rating')->with('alert','Pembelian Berhasil!');   
         }
 
         else {
