@@ -32,7 +32,11 @@
           </div> 
 	        <div class="panel-body"><img src="inidiambilfetch2an" class="img-responsive" style="height:150px; width:100%;" alt="Image"></div>
 	        <div class="panel-footer">
-	        	<table class="table table-borderless mt-2">
+	        	<table class="table table-borderless mt-2" id="myTable">
+                  <tr>
+                    <th>Nama Barang:</th>
+                    <td>{{$data->nama_barang}}</td>
+                  </tr>
                   <tr>
                     <th>Kategori:</th>
                     @if($data->kategori =='1')
@@ -158,7 +162,7 @@ function myFunction() {
 
   // Loop through all table rows, and hide those who don't match the search query
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
+    td = tr[i].getElementsByTagName("td")[0,1,2,3,4,5,6,7,8,9];
     if (td) {
       if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
