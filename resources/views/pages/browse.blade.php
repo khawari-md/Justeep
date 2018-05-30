@@ -16,6 +16,11 @@
 			</div>
 	</div>
 	<br>
+  <div data-role="main" class="ui-content">
+    <form>
+      <input id="filterTable-input" data-type="search" placeholder="Search For Customers...">
+    </form>
+  </div>
 	@foreach($data as $data)
 	<div class="container">
 	  <div class="row">
