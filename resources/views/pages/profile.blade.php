@@ -31,14 +31,14 @@
 							<i class="fas fa-gift"></i>
 						</div>
 						<p>REQUEST</p>
-						<p><strong>ambil dari database yaaaaa</strong></p>
+						<p>{{ $request }}</p>
 					</div>
 					<div class="col-md-6 text-center">
 						<div style="font-size:3em; color: dark grey">
 							<i class="fas fa-paper-plane"></i>
 						</div>
 						<p>OFFER</p>
-						<p><strong>ambil dari database yaaaaa</strong></p>
+						<p>{{ $offer }}</p>
 					</div>
 				</div>
 				<hr>
@@ -48,28 +48,28 @@
 							<i class="fas fa-utensils"></i>
 						</div>
 						<p>Makanan</p>
-						<p><strong>hai</strong></p>
+						<p>{{ $makan }}</p>
 					</div>
 					<div class="col-md-3 text-center">
 						<div style="font-size:3em; color: dark grey">
 							<i class="fas fa-shopping-bag"></i>
 						</div>
 						<p>Tas dan Aksesoris</p>
-						<p><strong>hai</strong></p>
+						<p>{{ $taksesoris }}</p>
 					</div>
 					<div class="col-md-3 text-center">
 						<div style="font-size:3em; color: dark grey">
 							<i class="fas fa-child"></i>
 						</div>
 						<p>Ibu dan Anak</p>
-						<p><strong>hai</strong></p>
+						<p>{{ $ibuanak }}</p>
 					</div>
 					<div class="col-md-3 text-center">
 						<div style="font-size:3em; color: dark grey">
 							<i class="fas fa-child"></i>
 						</div>
 						<p>Games</p>
-						<p><strong>hai</strong></p>
+						<p>{{ $games }}</p>
 					</div>
 				</div>
 				<hr>
