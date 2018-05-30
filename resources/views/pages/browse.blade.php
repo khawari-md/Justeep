@@ -16,25 +16,6 @@
 			</div>
 	</div>
 	<br>
-  <div class="container">
-    <div class="col-md-6">
-      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Nama Barang...">
-    </div>
-    <div class="col-md-6">
-      <div data-role="main" class="ui-content">
-        <form method="post" action="/action_page_post.php">
-          <div data-role="rangeslider">
-            <label for="price-min">Harga Barang:</label>
-            <input type="range" name="price-min" id="price-min" value="200" min="0" max="999999999">
-            <label for="price-max">Price:</label>
-            <input type="range" name="price-max" id="price-max" value="800" min="0" max="999999999">
-          </div>
-            <input type="submit" data-inline="true" value="Submit">
-        </form>
-      </div>
-    </div> 
-  </div>
-
 	@foreach($data as $data)
 	<div class="container">
 	  <div class="row">
@@ -49,10 +30,6 @@
 	        <div class="panel-body"><img src="inidiambilfetch2an" class="img-responsive" style="height:150px; width:100%;" alt="Image"></div>
 	        <div class="panel-footer">
 	        	<table class="table table-borderless mt-2" id="myTable">
-                  <tr>
-                    <th>Nama Barang:</th>
-                    <td>{{$data->nama_barang}}</td>
-                  </tr>
                   <tr>
                     <th>Kategori:</th>
                     @if($data->kategori =='1')
@@ -114,10 +91,6 @@
 	        <div class="panel-footer">
 	        	<table class="table table-borderless" id="myTable">
                   <tr>
-                    <th>Nama Barang:</th>
-                    <td>{{$data->nama_barang}}</td>
-                  </tr>
-                  <tr>
                     <th>Kategori:</th>
                     @if($data->kategori =='1')
                     <td>Makanan</td>
@@ -166,27 +139,4 @@
 	    @endforeach
 	  </div>
 	</div>
-
-  <script>
-function myFunction() {
-  // Declare variables 
-  var input, filter, div, tr, td, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    } 
-  }
-}
-</script>
 @endsection
