@@ -67,11 +67,7 @@
                     <td>{{$data->onr}}</td>
                   </tr>
                 </table>
-<<<<<<< HEAD
-                <a href="/cart/{{$data->onr_id}}"><button class="btn btn-warning btn-block"> ACCEPT </button></a>        
-=======
-                <a href="#"><button class="btn btn-warning btn-block"> ACCEPT </button></a>          
->>>>>>> 55aa947fd908672704f963035fb742b3f6946081
+                <a href="/cart/{{$data->onr_id}}"><button class="btn btn-warning btn-block"> ACCEPT </button></a>
 	        </div>
 	      </div>
 	    </div>
